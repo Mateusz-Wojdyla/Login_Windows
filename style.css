@@ -1,0 +1,16 @@
+body {
+	background-color: antiquewhite;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn{
+    height:90px;
+    width: 90px;
+}
+
+.btn:hover{
+    background-color: brown;
+}
