@@ -1,18 +1,30 @@
+@keyframes appearLabels {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 @keyframes appear-bottom{
 
 0%{
     opacity:0;
-    transform:translateY(500px);
+    
     transform:translateX(200px);
     border-radius: 50px;
 }
 30%{
     opacity:1;
     transform:translateY(0);
+    border-radius:15px;
     
 }
 80%{
-    border-radius:0;
+    border-radius:15px;
 }
 100%{
     transform:translate(0px);
@@ -27,7 +39,7 @@
 
     0%{
         opacity:0;
-        transform:translateY(-500px);
+        transform:translateY(-300px);
         border-radius: 50px;
     }
     30%{
@@ -35,10 +47,10 @@
         transform:translateY(0)
     }
     80%{
-        border-radius:0;
+        border-radius:15px;
     }
     100%{
-        transform:translate(3px);
+        transform:translate(5px);
         width:300px;
         height:300px;
         border-radius: 15px;
@@ -47,28 +59,107 @@
     }
 
 body {
-	background-color: antiquewhite;
-	height: 100vh;
+	background-image: url(tło-cosmos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    margin:0px;
+    padding:0px;
 }
 
 .box-bottom{
     height:90px;
     width: 90px;
-    background-color: blue;
-    animation: appear-bottom 3s 1s  both;
+    animation: appear-bottom 2s .5s  both;
+     backdrop-filter:blur(5px);
+     border: 2px solid rgb(166, 166, 207);
+     justify-content: center;
+     align-items: center;
     
 }
-.box-top{
+.logo{
+    display: flex;
+    margin-left:-20px;
+    margin-top:-30px;
+    animation: appearLabels 1s 1.5s both;
+}
+h1{
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin-left:40px;
+}
+.box-Login{
+    display: flex;
     height:90px;
     width: 90px;
-    background-color: rgb(36, 36, 149);
-    animation: appear-top 3s 1s  both;
+  
+    animation: appear-top 2s .5s  both;
+    backdrop-filter:blur(2px);
+    border: 2px solid rgb(166, 166, 207);
     
 }
+.input-box{
+    
+    margin-left:50px;
+    margin-top:10px;
+    height:40px;
+   
+    display:flex;
+}
+.input-box input{
+    height: 35px;
+    width: 120px;
+    border-radius:10px;
+    padding-left:70px;
+   
 
+}
+
+.remember-forgot{
+    
+    margin-left:20px;
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    
+}
+.remember-forgot a{
+    color:rgb(245, 240, 240);
+}
+.btn{
+    
+    height:30px;
+    width:110px;
+    margin-left:40%;
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding-top:5px;
+    border-radius:10px;
+}
+.btn:hover{
+    background-color: aqua;
+
+}
+
+    
+.register-link{
+    margin-left:20px;
+    color:white;
+}
+.register-link a{
+    color:rgb(250, 248, 248);
+}
+.wrapper{
+    animation: appearLabels 1s 1.5s both;
+}
 /*.btn:hover{
     background-color: brown;
-}
+}background-filtr:blur(20px);
