@@ -1,3 +1,51 @@
+@keyframes appear-bottom{
+
+0%{
+    opacity:0;
+    transform:translateY(500px);
+    transform:translateX(200px);
+    border-radius: 50px;
+}
+30%{
+    opacity:1;
+    transform:translateY(0);
+    
+}
+80%{
+    border-radius:0;
+}
+100%{
+    transform:translate(0px);
+    width:300px;
+    height:300px;
+    border-radius: 15px;
+    
+}
+
+}
+@keyframes appear-top{
+
+    0%{
+        opacity:0;
+        transform:translateY(-500px);
+        border-radius: 50px;
+    }
+    30%{
+        opacity:1;
+        transform:translateY(0)
+    }
+    80%{
+        border-radius:0;
+    }
+    100%{
+        transform:translate(3px);
+        width:300px;
+        height:300px;
+        border-radius: 15px;
+    }
+    
+    }
+
 body {
 	background-color: antiquewhite;
 	height: 100vh;
@@ -6,11 +54,21 @@ body {
 	align-items: center;
 }
 
-.btn{
+.box-bottom{
     height:90px;
     width: 90px;
+    background-color: blue;
+    animation: appear-bottom 3s 1s  both;
+    
+}
+.box-top{
+    height:90px;
+    width: 90px;
+    background-color: rgb(36, 36, 149);
+    animation: appear-top 3s 1s  both;
+    
 }
 
-.btn:hover{
+/*.btn:hover{
     background-color: brown;
 }
