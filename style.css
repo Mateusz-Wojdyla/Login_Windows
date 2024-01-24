@@ -27,8 +27,8 @@
     }
     100% {
         transform: translate(0px);
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         border-radius: 15px;
 
     }
@@ -51,8 +51,8 @@
     }
     100% {
         transform: translate(5px);
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         border-radius: 15px;
     }
 
@@ -74,8 +74,8 @@
     }
     100% {
         transform: translate(5px);
-        width: 300px;
-        height: 280px;
+        width: 400px;
+        height: 380px;
         border-radius: 15px;
         
     }
@@ -97,11 +97,10 @@ body {
 }
 
 .box-bottom {
-    height: 90px;
-    width: 90px;
     animation: appear-bottom 2s .5s both;
     backdrop-filter: blur(5px);
     border: 2px solid rgb(166, 166, 207);
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -109,8 +108,8 @@ body {
 
 .logo {
     display: flex;
-    margin-left: -20px;
-    margin-top: -30px;
+    justify-content: center;
+    align-items: center;
     animation: appearLabels 1s 1.5s both;
 }
 
@@ -118,14 +117,13 @@ h1 {
     color: white;
     display: flex;
     justify-content: center;
-    margin-left: 40px;
+    
 }
 
 .box-Login {
     display: flex;
-    height: 90px;
-    width: 90px;
-
+    align-items: center;
+    justify-content: center;
     animation: appear-top 2s .5s both;
     backdrop-filter: blur(2px);
     border: 2px solid rgb(166, 166, 207);
@@ -133,29 +131,27 @@ h1 {
 }
 
 .input-box {
-
-    margin-left: 50px;
-    margin-top: 10px;
-    height: 40px;
+    margin-top: 2em;
     border: none;
     opacity: 70%;
     display: flex;
 }
 
 .input-box input {
-    height: 35px;
-    width: 120px;
+    height: 3em;
+    width: 15em;
+    font-size: 16px;
     border-radius: 8px;
-    padding-left: 70px;
+    padding-left:2em;
+    box-shadow: 1px 1px  10px rgb(7, 7, 7);
     border: none;
 
 
 }
 
 .remember-forgot {
-
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 2em;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -164,38 +160,51 @@ h1 {
 
 .remember-forgot a {
     color: rgb(245, 240, 240);
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    cursor: pointer;
+    color:rgb(121, 42, 97);
+}
+#register{
+    text-decoration: none;
+}
+#register:hover{
+    color:rgb(121, 42, 97);
 }
 
 .btn {
-
-    height: 30px;
-    width: 110px;
-    margin-left: 40%;
-    margin-top: 20px;
+    margin-left:20%;
+    height: 3em;
+    width: 10em;
+    font-size: 1em;
+    margin-top: 1.5em;
     display: flex;
     justify-content: center;
-    text-align: center;
-    padding-top: 5px;
+    align-items: center;
     border-radius: 10px;
+    border:none;
+    box-shadow:2px 2px 10px black;
+    opacity: 80%;
     font-weight: 700;
     transition: all 0.4s;
 }
 
 .btn:hover {
-    background-color: aqua;
+    background-color:rgb(136, 59, 143);
     cursor: pointer;
 
 }
 
 
 .register-link {
-
-    margin-left: 20px;
     color: white;
 }
 
 .register-link a {
     color: rgb(250, 248, 248);
+    font-size: 1.5em;
+    padding-left:1em;
 }
 .exit-btn{
     
@@ -211,6 +220,14 @@ h1 {
     cursor:pointer;
     color:white;
     
+}
+.exit-btn:hover{
+    color: rgb(136, 59, 143);
+}
+.register-title{
+    padding:0;
+    margin:0;
+    top:1em;
 }
 .register {
     display: none;
@@ -232,30 +249,29 @@ h1 {
    
 }
 .register-input{
-    height:9em;
-    width:12em;
-    border-radius: 1em;
-    border:none;
-    font-size: 18px;
-    padding-left:1em;
+    height: 3em;
+    width: 15em;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left:2em;
+    box-shadow: 1px 1px  10px rgb(7, 7, 7);
+    border: none;
     
 
 }
 .register-btn{
     border-radius: 1em;
-    height: 4em;
+    height: 3em;
+    width:9em;
     border:none;
     margin-bottom:1em;
     font-size: 18px;
 }
 .register-btn:hover{
-    background-color: aqua;
+    background-color: rgb(136, 59, 143);
 }
 
 .wrapper {
     animation: appearLabels 1s 1.5s both;
 }
 
-.btn:hover {
-    background-color: brown;
-}
